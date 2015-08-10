@@ -1,0 +1,24 @@
+
+{{#linkTo "dashboard"}}Back to dashboard{{/linkTo}}
+<div class="content-wrapper">
+	<div class="clearfix">
+		<div class="list-panel pull-right">
+			<ul>
+			{{#each controller.model as |item|}}
+				<li>
+					{{item.name}}
+					[<a href="#" {{action "selectItem" item}}>edit</a>]
+					[<a href="#" {{action "deleteItem" item}}>delete</a>]
+				</li>
+			{{/each}}
+			</ul>
+		</div>
+		<div class="form-panel pull-left">
+			{{input type="text" value=controller.content.name size="50" placeholder="Name"}}
+			{{input type="text" value=controller.content.amt size="50" placeholder="Monthly Salary"}}
+			<p>Yearly Salary: {{year-label monthlyAmount=controller.content.amt}}</p>
+			<button {{action "addItem"}} {{bind-attr class="controller.isAdding :execute-create"}} >Add</button>
+		</div>
+	</div>
+	<button {{action "addIncomeResource"}} {{bind-attr class="controller.isAdding :enter-create"}} >Create New</button>
+</div>

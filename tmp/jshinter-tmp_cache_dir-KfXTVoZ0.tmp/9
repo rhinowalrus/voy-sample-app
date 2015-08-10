@@ -1,0 +1,4 @@
+module('JSHint - mixins');
+test('mixins/format-currency.js should pass jshint', function() { 
+  ok(true, 'mixins/format-currency.js should pass jshint.'); 
+});

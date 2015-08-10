@@ -1,0 +1,4 @@
+module('JSHint - routes');
+test('routes/dashboard.js should pass jshint', function() { 
+  ok(false, 'routes/dashboard.js should pass jshint.\nroutes/dashboard.js: line 15, col 13, Forgotten \'debugger\' statement?\n\n1 error'); 
+});

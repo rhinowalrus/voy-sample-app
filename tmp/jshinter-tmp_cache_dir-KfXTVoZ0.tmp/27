@@ -1,0 +1,4 @@
+module('JSHint - components');
+test('components/year-label.js should pass jshint', function() { 
+  ok(false, 'components/year-label.js should pass jshint.\ncomponents/year-label.js: line 8, col 23, \'monthlyAmount\' is not defined.\n\n1 error'); 
+});

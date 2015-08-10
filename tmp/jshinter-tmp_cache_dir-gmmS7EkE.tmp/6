@@ -1,0 +1,4 @@
+module('JSHint - helpers');
+test('helpers/format-currency.js should pass jshint', function() { 
+  ok(true, 'helpers/format-currency.js should pass jshint.'); 
+});

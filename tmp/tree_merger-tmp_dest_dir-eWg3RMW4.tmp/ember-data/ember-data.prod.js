@@ -1,0 +1,1 @@
+/home/ryan/Dev/voy-sample-app/tmp/funnel-output_path-TkSnIpQX.tmp/ember-data/ember-data.prod.js

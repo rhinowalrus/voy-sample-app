@@ -1,0 +1,16 @@
+<div class="list-panel">
+<ul>
+	{{#each controller.content as |item|}}
+		<li>
+			<span>
+			{{#linkTo (to-lower item.name)}}
+				{{item.name}}
+			{{/linkTo}}
+			</span>:
+			<span>
+				{{format-currency item.amt}}
+			</span>
+		</li>
+	{{/each}}
+</ul>
+</div>

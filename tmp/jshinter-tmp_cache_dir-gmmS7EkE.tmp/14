@@ -1,0 +1,4 @@
+module('JSHint - routes');
+test('routes/expenses.js should pass jshint', function() { 
+  ok(true, 'routes/expenses.js should pass jshint.'); 
+});

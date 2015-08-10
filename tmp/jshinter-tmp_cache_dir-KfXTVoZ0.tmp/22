@@ -1,0 +1,4 @@
+module('JSHint - components');
+test('components/year-label.js should pass jshint', function() { 
+  ok(false, 'components/year-label.js should pass jshint.\ncomponents/year-label.js: line 8, col 9, \'rawVal\' is not defined.\ncomponents/year-label.js: line 9, col 36, \'rawVal\' is not defined.\n\n2 errors'); 
+});

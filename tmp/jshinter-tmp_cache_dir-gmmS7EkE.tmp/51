@@ -1,0 +1,4 @@
+module('JSHint - routes');
+test('routes/employment.js should pass jshint', function() { 
+  ok(false, 'routes/employment.js should pass jshint.\nroutes/employment.js: line 13, col 9, Forgotten \'debugger\' statement?\n\n1 error'); 
+});

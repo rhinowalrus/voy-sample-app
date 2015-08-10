@@ -1,0 +1,4 @@
+module('JSHint - helpers');
+test('helpers/to-lower.js should pass jshint', function() { 
+  ok(true, 'helpers/to-lower.js should pass jshint.'); 
+});

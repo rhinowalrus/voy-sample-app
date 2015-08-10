@@ -1,0 +1,1 @@
+/home/ryan/Dev/voy-sample-app/bower_components/ember-cli-test-loader/test-loader.js

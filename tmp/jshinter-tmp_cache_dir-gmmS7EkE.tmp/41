@@ -1,0 +1,4 @@
+module('JSHint - routes');
+test('routes/employment.js should pass jshint', function() { 
+  ok(false, 'routes/employment.js should pass jshint.\nroutes/employment.js: line 7, col 42, \'model\' is defined but never used.\n\n1 error'); 
+});

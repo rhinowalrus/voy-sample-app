@@ -1,0 +1,230 @@
+export default Ember.HTMLBars.template((function() {
+  var child0 = (function() {
+    return {
+      meta: {
+        "revision": "Ember@1.13.6",
+        "loc": {
+          "source": null,
+          "start": {
+            "line": 2,
+            "column": 0
+          },
+          "end": {
+            "line": 2,
+            "column": 40
+          }
+        },
+        "moduleName": "voy-sample-app/templates/employment.hbs"
+      },
+      arity: 0,
+      cachedFragment: null,
+      hasRendered: false,
+      buildFragment: function buildFragment(dom) {
+        var el0 = dom.createDocumentFragment();
+        var el1 = dom.createTextNode("Back to dashboard");
+        dom.appendChild(el0, el1);
+        return el0;
+      },
+      buildRenderNodes: function buildRenderNodes() { return []; },
+      statements: [
+
+      ],
+      locals: [],
+      templates: []
+    };
+  }());
+  var child1 = (function() {
+    return {
+      meta: {
+        "revision": "Ember@1.13.6",
+        "loc": {
+          "source": null,
+          "start": {
+            "line": 14,
+            "column": 2
+          },
+          "end": {
+            "line": 20,
+            "column": 2
+          }
+        },
+        "moduleName": "voy-sample-app/templates/employment.hbs"
+      },
+      arity: 1,
+      cachedFragment: null,
+      hasRendered: false,
+      buildFragment: function buildFragment(dom) {
+        var el0 = dom.createDocumentFragment();
+        var el1 = dom.createTextNode("			");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createElement("li");
+        var el2 = dom.createTextNode("\n				");
+        dom.appendChild(el1, el2);
+        var el2 = dom.createComment("");
+        dom.appendChild(el1, el2);
+        var el2 = dom.createTextNode("\n				[");
+        dom.appendChild(el1, el2);
+        var el2 = dom.createElement("a");
+        dom.setAttribute(el2,"href","#");
+        var el3 = dom.createTextNode("edit");
+        dom.appendChild(el2, el3);
+        dom.appendChild(el1, el2);
+        var el2 = dom.createTextNode("]\n				[");
+        dom.appendChild(el1, el2);
+        var el2 = dom.createElement("a");
+        dom.setAttribute(el2,"href","#");
+        var el3 = dom.createTextNode("delete");
+        dom.appendChild(el2, el3);
+        dom.appendChild(el1, el2);
+        var el2 = dom.createTextNode("]\n			");
+        dom.appendChild(el1, el2);
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode("\n");
+        dom.appendChild(el0, el1);
+        return el0;
+      },
+      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
+        var element0 = dom.childAt(fragment, [1]);
+        var element1 = dom.childAt(element0, [3]);
+        var element2 = dom.childAt(element0, [5]);
+        var morphs = new Array(3);
+        morphs[0] = dom.createMorphAt(element0,1,1);
+        morphs[1] = dom.createElementMorph(element1);
+        morphs[2] = dom.createElementMorph(element2);
+        return morphs;
+      },
+      statements: [
+        ["content","item.name",["loc",[null,[16,4],[16,17]]]],
+        ["element","action",["selectItem",["get","item",["loc",[null,[17,39],[17,43]]]]],[],["loc",[null,[17,17],[17,45]]]],
+        ["element","action",["deleteItem",["get","item",["loc",[null,[18,39],[18,43]]]]],[],["loc",[null,[18,17],[18,45]]]]
+      ],
+      locals: ["item"],
+      templates: []
+    };
+  }());
+  return {
+    meta: {
+      "revision": "Ember@1.13.6",
+      "loc": {
+        "source": null,
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 26,
+          "column": 6
+        }
+      },
+      "moduleName": "voy-sample-app/templates/employment.hbs"
+    },
+    arity: 0,
+    cachedFragment: null,
+    hasRendered: false,
+    buildFragment: function buildFragment(dom) {
+      var el0 = dom.createDocumentFragment();
+      var el1 = dom.createTextNode("\n");
+      dom.appendChild(el0, el1);
+      var el1 = dom.createComment("");
+      dom.appendChild(el0, el1);
+      var el1 = dom.createTextNode("\n");
+      dom.appendChild(el0, el1);
+      var el1 = dom.createElement("div");
+      dom.setAttribute(el1,"class","content-wrapper");
+      var el2 = dom.createTextNode("\n");
+      dom.appendChild(el1, el2);
+      var el2 = dom.createElement("div");
+      dom.setAttribute(el2,"class","clearfix");
+      var el3 = dom.createTextNode("\n	");
+      dom.appendChild(el2, el3);
+      var el3 = dom.createElement("div");
+      dom.setAttribute(el3,"class","form-panel pull-left");
+      var el4 = dom.createTextNode("\n		");
+      dom.appendChild(el3, el4);
+      var el4 = dom.createComment("");
+      dom.appendChild(el3, el4);
+      var el4 = dom.createTextNode("\n		");
+      dom.appendChild(el3, el4);
+      var el4 = dom.createComment("");
+      dom.appendChild(el3, el4);
+      var el4 = dom.createTextNode("\n		");
+      dom.appendChild(el3, el4);
+      var el4 = dom.createElement("p");
+      var el5 = dom.createTextNode("Yearly Salary: ");
+      dom.appendChild(el4, el5);
+      var el5 = dom.createComment("");
+      dom.appendChild(el4, el5);
+      dom.appendChild(el3, el4);
+      var el4 = dom.createTextNode("\n		");
+      dom.appendChild(el3, el4);
+      var el4 = dom.createElement("button");
+      var el5 = dom.createTextNode("Add");
+      dom.appendChild(el4, el5);
+      dom.appendChild(el3, el4);
+      var el4 = dom.createTextNode("\n	");
+      dom.appendChild(el3, el4);
+      dom.appendChild(el2, el3);
+      var el3 = dom.createTextNode("\n\n	");
+      dom.appendChild(el2, el3);
+      var el3 = dom.createElement("div");
+      dom.setAttribute(el3,"class","list-panel pull-right");
+      var el4 = dom.createTextNode("\n		");
+      dom.appendChild(el3, el4);
+      var el4 = dom.createElement("ul");
+      var el5 = dom.createTextNode("\n");
+      dom.appendChild(el4, el5);
+      var el5 = dom.createComment("");
+      dom.appendChild(el4, el5);
+      var el5 = dom.createTextNode("		");
+      dom.appendChild(el4, el5);
+      dom.appendChild(el3, el4);
+      var el4 = dom.createTextNode("\n	");
+      dom.appendChild(el3, el4);
+      dom.appendChild(el2, el3);
+      var el3 = dom.createTextNode("\n");
+      dom.appendChild(el2, el3);
+      dom.appendChild(el1, el2);
+      var el2 = dom.createTextNode("\n\n");
+      dom.appendChild(el1, el2);
+      var el2 = dom.createElement("button");
+      var el3 = dom.createTextNode("Create New");
+      dom.appendChild(el2, el3);
+      dom.appendChild(el1, el2);
+      var el2 = dom.createTextNode("\n");
+      dom.appendChild(el1, el2);
+      dom.appendChild(el0, el1);
+      return el0;
+    },
+    buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
+      var element3 = dom.childAt(fragment, [3]);
+      var element4 = dom.childAt(element3, [1]);
+      var element5 = dom.childAt(element4, [1]);
+      var element6 = dom.childAt(element5, [7]);
+      var element7 = dom.childAt(element3, [3]);
+      var morphs = new Array(9);
+      morphs[0] = dom.createMorphAt(fragment,1,1,contextualElement);
+      morphs[1] = dom.createMorphAt(element5,1,1);
+      morphs[2] = dom.createMorphAt(element5,3,3);
+      morphs[3] = dom.createMorphAt(dom.childAt(element5, [5]),1,1);
+      morphs[4] = dom.createAttrMorph(element6, 'class');
+      morphs[5] = dom.createElementMorph(element6);
+      morphs[6] = dom.createMorphAt(dom.childAt(element4, [3, 1]),1,1);
+      morphs[7] = dom.createAttrMorph(element7, 'class');
+      morphs[8] = dom.createElementMorph(element7);
+      return morphs;
+    },
+    statements: [
+      ["block","linkTo",["dashboard"],[],0,null,["loc",[null,[2,0],[2,51]]]],
+      ["inline","input",[],["type","text","value",["subexpr","@mut",[["get","controller.content.name",["loc",[null,[6,28],[6,51]]]]],[],[]],"size","50","placeholder","Name"],["loc",[null,[6,2],[6,82]]]],
+      ["inline","input",[],["type","text","value",["subexpr","@mut",[["get","controller.content.amt",["loc",[null,[7,28],[7,50]]]]],[],[]],"size","50","placeholder","Monthly Salary"],["loc",[null,[7,2],[7,91]]]],
+      ["inline","year-label",[],["monthlyAmount",["subexpr","@mut",[["get","controller.content.amt",["loc",[null,[8,47],[8,69]]]]],[],[]]],["loc",[null,[8,20],[8,71]]]],
+      ["attribute","class",["concat",[["subexpr","-bind-attr-class",[["get","controller.isAdding",[]],"is-adding"],[],[]]," ","execute-create"]]],
+      ["element","action",["addItem"],[],["loc",[null,[9,10],[9,30]]]],
+      ["block","each",[["get","controller.model",["loc",[null,[14,10],[14,26]]]]],[],1,null,["loc",[null,[14,2],[20,11]]]],
+      ["attribute","class",["concat",[["subexpr","-bind-attr-class",[["get","controller.isAdding",[]],"is-adding"],[],[]]," ","enter-create"]]],
+      ["element","action",["addIncomeResource"],[],["loc",[null,[25,8],[25,38]]]]
+    ],
+    locals: [],
+    templates: [child0, child1]
+  };
+}()));
