@@ -5,22 +5,8 @@ moduleForComponent('year-label', 'Integration | Component | year label', {
   integration: true
 });
 
-test('it renders', function(assert) {
-  assert.expect(2);
-
-  // Set any properties with this.set('myProperty', 'value');
-  // Handle any actions with this.on('myAction', function(val) { ... });
-
-  this.render(hbs`{{year-label}}`);
-
-  assert.equal(this.$().text().trim(), '');
-
-  // Template block usage:
-  this.render(hbs`
-    {{#year-label}}
-      template block text
-    {{/year-label}}
-  `);
-
-  assert.equal(this.$().text().trim(), 'template block text');
+test('Generates expected value', function(assert) {
+  assert.expect(1);
+  this.render(hbs`{{year-label monthlyAmount=1}}`);
+  assert.equal(this.$().text().trim(), '$ 12.00');
 });
